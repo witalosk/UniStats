@@ -1,0 +1,66 @@
+.unity-group-box {
+}
+
+.rootBox {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    height: initial;
+    background-color: rgba(26, 26, 26, 0.3);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.svText {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+    color: rgb(204, 204, 204);
+}
+
+.moduleName {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(204, 204, 204);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -unity-text-align: middle-center;
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.graph {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px;
+}
+
+.moduleBox {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.4);
+    justify-content: space-around;
+    padding-left: 6px;
+}

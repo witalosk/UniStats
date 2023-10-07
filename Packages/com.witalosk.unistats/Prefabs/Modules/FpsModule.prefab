@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5444478349371107504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5444478349371107505}
+  - component: {fileID: 5444478349371107507}
+  - component: {fileID: 5444478349371107506}
+  m_Layer: 0
+  m_Name: FpsModule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5444478349371107505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5444478349371107504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5444478349371107507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5444478349371107504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90667f980f14e944a164ab576f7a344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moduleTreeAsset: {fileID: 9197481963319205126, guid: 3f9241b5aa0ab7146bde806080279d16, type: 3}
+  _moduleName: Fps
+  _updateInterval: 0.5
+  _sampleNum: 512
+  _latestValueSampleNum: 15
+  _colorConfig:
+    HighThreshold: 28
+    LowThreshold: 26
+    HighColor: {r: 0, g: 0.6078, b: 0.5647, a: 1}
+    MiddleColor: {r: 0.9333, g: 0.7485, b: 0.3173, a: 1}
+    LowColor: {r: 0.8823, g: 0.4259, b: 0.3794, a: 1}
+--- !u!114 &5444478349371107506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5444478349371107504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58651c9a78483a24cb79370829ba82e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _graphMaterial: {fileID: 2100000, guid: cd6e6a54adbb6074eb636df104787baa, type: 2}
+  _textureResolutionScale: 3
