@@ -7,7 +7,10 @@ namespace UniStats
     {
         public float Element1Value => _drawCallsRecorder.LastValue;
         public float Element2Value => _setPassCallsRecorder.LastValue;
-        public float Element3Value => _verticesRecorder.LastValue / 1000f;
+        public float Element3Value => _verticesRecorder.LastValue / _verticesDivider;
+        
+        [SerializeField]
+        private float _verticesDivider = 1000f;
         
         private ProfilerRecorder _drawCallsRecorder;
         private ProfilerRecorder _setPassCallsRecorder;
