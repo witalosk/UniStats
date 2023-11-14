@@ -32,7 +32,7 @@
             uniform float _Values1[128];
             uniform float _Values2[128];
             int _ValuesLength;
-            float _MaxValue;
+            float _GraphMaxValue;
 
             half4 _Color1;
             half4 _Color2;
@@ -56,13 +56,13 @@
                 const float val2 = _Values2[_ValuesLength - floor(i.uv.x * (float)_ValuesLength) - 1];
                 
                 // Graph1
-                float diff = val1 - i.uv.y * _MaxValue;
+                float diff = val1 - i.uv.y * _GraphMaxValue;
                 float uvDiff = max(diff / val1, 0.0);
                 half4 col1 = diff > 0.0 ? lerp(0.5, 1.0, 1.0 - uvDiff) * _Color1 : 0.0;
                 col1 *= uvDiff < _TexelSize.x * DotSize ? 1.0 : 0.4;
 
                  // Graph2
-                diff = val2 - i.uv.y * _MaxValue;
+                diff = val2 - i.uv.y * _GraphMaxValue;
                 uvDiff = max(diff / val2, 0.0);
                 half4 col2 = diff > 0.0 ? lerp(0.5, 1.0, 1.0 - uvDiff) * _Color2 : 0.0;
                 col2 *= uvDiff < _TexelSize.x * DotSize ? 1.0 : 0.4; 
