@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## [1.2.1] - 2023-11-14
+### Changes
+- Added Vertices Divider Field
+
 ## [1.2.0] - 2023-11-14
 ### Changes
 - Generalize Memory Module to support any type of data. (Triple Value Module)

@@ -1,7 +1,7 @@
 ﻿{
   "name": "com.witalosk.unistats",
   "displayName": "UniStats",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "unity": "2021.1",
   "description": "Simple Stats Viewer based on UIToolkit",
   "author": {
