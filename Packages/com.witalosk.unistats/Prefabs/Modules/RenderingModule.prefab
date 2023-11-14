@@ -53,14 +53,17 @@ MonoBehaviour:
   _element1:
     Label: Draw Calls
     Unit: 
+    DecimalPlace: 0
     Color: {r: 1, g: 0.44308603, b: 0.314, a: 1}
   _element2:
     Label: Set Pass Calls
     Unit: 
+    DecimalPlace: 0
     Color: {r: 1, g: 0.7294118, b: 0.1764706, a: 1}
   _element3:
     Label: Vertices
     Unit: K
+    DecimalPlace: 1
     Color: {r: 0.3108108, g: 0.62837815, b: 1, a: 1}
 --- !u!114 &5052225296061616324
 MonoBehaviour:
@@ -88,3 +91,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e442648a96814c84afa987fad7dc03cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticesDivider: 1000

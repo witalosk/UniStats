@@ -73,9 +73,9 @@ namespace UniStats
             _graphView.style.backgroundImage = _graphBackground;
             
             // Update UI
-            _element1ValLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(_element1.Color)}>{_element1HistoryManager.CurrentValue:F0}</color> {_element1.Unit}";
-            _element2ValLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(_element2.Color)}>{_element2HistoryManager.CurrentValue:F0}</color> {_element2.Unit}";
-            _element3ValLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(_element3.Color)}>{_element3HistoryManager.CurrentValue:F0}</color> {_element3.Unit}";
+            _element1ValLabel.text = _element1.Format(_element1HistoryManager.CurrentValue);
+            _element2ValLabel.text = _element2.Format(_element2HistoryManager.CurrentValue);
+            _element3ValLabel.text = _element3.Format(_element3HistoryManager.CurrentValue);
             
             _timeSinceLastUpdate = 0f;
         }
@@ -86,13 +86,19 @@ namespace UniStats
     {
         public string Label;
         public string Unit;
+        public int DecimalPlace;
         public Color Color;
-
+        
         public ElementSettings(string label, string unit, Color col)
         {
             Label = label;
             Unit = unit;
             Color = col;
+        }
+
+        public string Format(float val)
+        {
+            return $"<color=#{ColorUtility.ToHtmlStringRGB(Color)}>{string.Format($"{{0:F{DecimalPlace}}}", val)}</color> {Unit}";
         }
     }
 }
