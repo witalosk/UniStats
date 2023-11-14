@@ -49,9 +49,15 @@ MonoBehaviour:
   _moduleName: Memory
   _updateInterval: 0.5
   _sampleNum: 128
-  _reservedColor: {r: 0, g: 0.7294, b: 0.7686, a: 1}
-  _allocatedColor: {r: 0.4549, g: 0.898, b: 0.7802, a: 1}
-  _monoHeapColor: {r: 0.7634, g: 0.71, b: 1, a: 1}
+  _element1:
+    Color: {r: 0, g: 0.7294, b: 0.7686, a: 1}
+    Unit: MB
+  _element2:
+    Color: {r: 0.4549, g: 0.898, b: 0.7802, a: 1}
+    Unit: MB
+  _element3:
+    Color: {r: 0.7634, g: 0.71, b: 1, a: 1}
+    Unit: MB
 --- !u!114 &-1116812769831156925
 MonoBehaviour:
   m_ObjectHideFlags: 0
