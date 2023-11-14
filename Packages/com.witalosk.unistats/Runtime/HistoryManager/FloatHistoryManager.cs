@@ -51,5 +51,18 @@
 
             return values;
         }
+        
+        public float[] GetLatestValues(int numValues, out float maxValue)
+        {
+            float[] values = new float[numValues];
+            maxValue = float.MinValue;
+            for (int i = 0; i < numValues; i++)
+            {
+                values[i] = _samples[(_currentIndex - i - 1 + _sampleNum) % _sampleNum];
+                maxValue = values[i] > maxValue ? values[i] : maxValue;
+            }
+
+            return values;
+        }
     }
 }
