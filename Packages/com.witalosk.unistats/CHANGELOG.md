@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## [1.2.0] - 2023-11-14
+### Changes
+- Generalize Memory Module to support any type of data. (Triple Value Module)
+- Added Rendering Module.
+
 ## [1.1.0] - 2023-11-14
 ### Changes
 - The maximum value of the range displayed is used for the maximum value of vertical axis.
