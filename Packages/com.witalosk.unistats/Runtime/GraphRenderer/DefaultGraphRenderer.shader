@@ -32,8 +32,7 @@
             uniform float _Values[128];
             int _ValuesLength;
             float _AverageValue;
-            float _MinValue;
-            float _MaxValue;
+            float _GraphMaxValue;
 
             float _WarningThreshold;
             float _CriticalThreshold;
@@ -59,7 +58,7 @@
                 const float val = _Values[_ValuesLength - floor(i.uv.x * (float)_ValuesLength) - 1];
 
                 // Graph
-                const float diff = val - i.uv.y * _MaxValue;
+                const float diff = val - i.uv.y * _GraphMaxValue;
                 const float uvDiff = max(diff / val, 0.0);
                 half4 col = diff > 0.0 ? lerp(0.5, 1.0, 1.0 - uvDiff) : 0.0;
                 col *= uvDiff < _TexelSize.x * DotSize ? 1.0 : 0.4; 
@@ -70,8 +69,8 @@
                     : _GoodColor;
                 
                 // Threshold
-                col += abs(i.uv.y - _CriticalThreshold / _MaxValue) < _TexelSize.y ? _WarningColor
-                    : abs(i.uv.y - _WarningThreshold / _MaxValue) < _TexelSize.y ? _GoodColor
+                col += abs(i.uv.y - _CriticalThreshold / _GraphMaxValue) < _TexelSize.y ? _WarningColor
+                    : abs(i.uv.y - _WarningThreshold / _GraphMaxValue) < _TexelSize.y ? _GoodColor
                     : col;
                 
                 return col;

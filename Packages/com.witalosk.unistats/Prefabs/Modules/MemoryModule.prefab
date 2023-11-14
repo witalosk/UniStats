@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7155484310887835019}
   - component: {fileID: 7155484310887835016}
-  - component: {fileID: 7155484310887835017}
+  - component: {fileID: -1116812769831156925}
   m_Layer: 0
   m_Name: MemoryModule
   m_TagString: Untagged
@@ -52,7 +52,7 @@ MonoBehaviour:
   _reservedColor: {r: 0, g: 0.7294, b: 0.7686, a: 1}
   _allocatedColor: {r: 0.4549, g: 0.898, b: 0.7802, a: 1}
   _monoHeapColor: {r: 0.7634, g: 0.71, b: 1, a: 1}
---- !u!114 &7155484310887835017
+--- !u!114 &-1116812769831156925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,8 +61,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7155484310887835018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd86d4f9ef3df054da3d7175607e1c1b, type: 3}
+  m_Script: {fileID: 11500000, guid: ebb520e18c354de0bb19633fa0597530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _graphMaterial: {fileID: 2100000, guid: e31706ce5bdd117479e680a0d9192715, type: 2}
+  _graphMaterial: {fileID: 2100000, guid: 36cd36740ab1ed343986b4a1a5a4caa6, type: 2}
   _textureResolutionScale: 3

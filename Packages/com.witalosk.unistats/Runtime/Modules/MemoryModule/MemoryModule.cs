@@ -23,7 +23,7 @@ namespace UniStats
         private FloatHistoryManager _reservedHistoryManager;
         private FloatHistoryManager _monoHeapHistoryManager;
         private IMemoryDataProvider _memoryDataProvider;
-        private IDoubleGraphRenderer _graphRenderer;
+        private ITripleGraphRenderer _graphRenderer;
         
         public override void Init()
         {
@@ -39,7 +39,7 @@ namespace UniStats
             _graphView = ModuleElementRoot.Q<GroupBox>("GraphView");
             
             _memoryDataProvider = GetComponent<IMemoryDataProvider>() ?? gameObject.AddComponent<DefaultMemoryDataProvider>();
-            _graphRenderer = GetComponent<IDoubleGraphRenderer>();
+            _graphRenderer = GetComponent<ITripleGraphRenderer>();
             
             _graphView.RegisterCallback<GeometryChangedEvent>(_ =>
             {
@@ -60,7 +60,11 @@ namespace UniStats
             _monoHeapHistoryManager.AddValue((_memoryDataProvider.MonoUsedSize >> 10) / 1024f);
             
             // Update Graph
-            _graphBackground.value = Background.FromRenderTexture(_graphRenderer.GetGraphTexture(_reservedHistoryManager, _reservedColor, _allocatedHistoryManager, _allocatedColor));
+            _graphBackground.value = Background.FromRenderTexture(_graphRenderer.GetGraphTexture(
+                _reservedHistoryManager, _reservedColor,
+                _allocatedHistoryManager, _allocatedColor,
+                _monoHeapHistoryManager, _monoHeapColor
+            ));
             _graphView.style.backgroundImage = _graphBackground;
             
             // Update UI
