@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6183503318375953933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6183503318375953932}
+  - component: {fileID: 6183503318375953935}
+  - component: {fileID: 5052225296061616324}
+  - component: {fileID: 6183503318375953920}
+  m_Layer: 0
+  m_Name: RenderingModule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6183503318375953932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183503318375953933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6183503318375953935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183503318375953933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2411d3c1bb0770d4ab4fd377ab2c9d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moduleTreeAsset: {fileID: 9197481963319205126, guid: 6d2bfa9a677be9b4b9f9dfe2709e0c6d, type: 3}
+  _moduleName: Rendering
+  _updateInterval: 0.1
+  _sampleNum: 128
+  _element1:
+    Label: Draw Calls
+    Unit: 
+    Color: {r: 1, g: 0.44308603, b: 0.314, a: 1}
+  _element2:
+    Label: Set Pass Calls
+    Unit: 
+    Color: {r: 1, g: 0.7294118, b: 0.1764706, a: 1}
+  _element3:
+    Label: Vertices
+    Unit: K
+    Color: {r: 0.3108108, g: 0.62837815, b: 1, a: 1}
+--- !u!114 &5052225296061616324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183503318375953933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb520e18c354de0bb19633fa0597530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _graphMaterial: {fileID: 2100000, guid: 36cd36740ab1ed343986b4a1a5a4caa6, type: 2}
+  _textureResolutionScale: 3
+--- !u!114 &6183503318375953920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183503318375953933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e442648a96814c84afa987fad7dc03cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
