@@ -55,7 +55,7 @@ MonoBehaviour:
     Label: CPU
     Unit: ms
     DecimalPlace: 1
-    Color: {r: 0.43400002, g: 0.69448864, b: 1, a: 1}
+    Color: {r: 0.27058825, g: 0.7882353, b: 1, a: 1}
   _element2:
     Label: Main Thread
     Unit: ms

@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## [1.3.0] - 2023-12-03
+### Changes
+- Added Frame Time Module.
+  - Works only in the Unity 2022 or later.
+
 ## [1.2.1] - 2023-11-14
 ### Changes
 - Added Vertices Divider Field
