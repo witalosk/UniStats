@@ -29,13 +29,13 @@ namespace UniStats
         
         protected virtual void OnDestroy()
         {
+            IsInited = false;
+            
             if (_graphTexture != null)
             {
                 _graphTexture.Release();
                 _graphTexture = null;
             }
-            
-            IsInited = false;
         }
     }
 }
