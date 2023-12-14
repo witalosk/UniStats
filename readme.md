@@ -16,5 +16,18 @@ And you can add your own modules to the stats viewer by implementing the class b
 1. Add `UniStats` prefab to your scene.
 2. That's all!
 
+## Environment
+- Unity 2021 or later.
+  - I have not tested the operation of earlier versions.
+- Windows (DirectX)
+  - I have not confirmed operation outside of this environment.
+
+## Modules
+- FPS Module
+- Memory Module
+- Rendering Module
+- Frame Time Module
+  - Only works in Unity 2022 or later.
+
 ## References
 - [Graphy](https://github.com/Tayx94/graphy)
