@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.witalosk.unistats/Runtime/UIToolkit/USS/StatsViewer.uss?fileID=7433441132597879392&amp;guid=4ae796a486d164b40b9af7ff390864d4&amp;type=3#StatsViewer" />
+    <ui:GroupBox name="TextModuleBox" class="moduleBox" style="height: auto; visibility: visible; overflow: hidden; width: auto; -unity-text-align: middle-left;">
+        <ui:Label text="SystemInfo" display-tooltip-when-elided="true" name="ModuleLabel" class="moduleName svText" />
+        <ui:Label text="Screen: ####x####@##Hz&#10;Window: ####x####@##Hz[##dpi]&#10;Graphics API: #####&#10;GPU: #####&#10;VRAM: #####MB. Max texture size: #####px. Shader level: ##&#10;CPU: ##### [## cores]&#10;RAM: ##### MB&#10;OS: ##### [#####]" name="Text" style="flex-grow: 1; align-self: auto; color: rgb(204, 204, 204); -unity-text-align: middle-left; flex-shrink: 0; white-space: normal;" />
+    </ui:GroupBox>
+</ui:UXML>
