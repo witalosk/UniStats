@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## [1.4.0] - 2025-07-11
+### Changes
+- Added Text Module (System Info Module).
+- Fixed the caution message about the `RenderTexture.active.`
+
 ## [1.3.0] - 2023-12-03
 ### Changes
 - Added Frame Time Module.
