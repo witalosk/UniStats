@@ -25,9 +25,14 @@ And you can add your own modules to the stats viewer by implementing the class b
 ## Modules
 - FPS Module
 - Memory Module
+  - Allocated, Reserved, Mono
 - Rendering Module
+  - Draw Calls, Set Pass Calls, Vertices Count 
 - Frame Time Module
+  - CPU, MainThread, GPU Frame Time
   - Only works in Unity 2022 or later.
+- System Info Module
+  - Device data
 
 ## References
 - [Graphy](https://github.com/Tayx94/graphy)
