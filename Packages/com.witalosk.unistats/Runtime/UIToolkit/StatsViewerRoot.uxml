@@ -1,4 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Packages/com.witalosk.unistats/Runtime/UIToolkit/USS/StatsViewer.uss?fileID=7433441132597879392&amp;guid=4ae796a486d164b40b9af7ff390864d4&amp;type=3#StatsViewer" />
-    <ui:GroupBox name="StatsViewerRoot" picking-mode="Ignore" class="rootBox" />
+    <ui:GroupBox name="StatsViewerRoot" picking-mode="Ignore" class="rootBox" style="width: auto; min-width: 250px;" />
 </ui:UXML>

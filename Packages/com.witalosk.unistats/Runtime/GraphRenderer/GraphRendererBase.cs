@@ -31,11 +31,15 @@ namespace UniStats
         {
             IsInited = false;
             
-            if (_graphTexture != null)
+            if (_graphTexture == null) return;
+
+            if (RenderTexture.active == _graphTexture)
             {
-                _graphTexture.Release();
-                _graphTexture = null;
+                RenderTexture.active = null;
             }
+                
+            _graphTexture.Release();
+            _graphTexture = null;
         }
     }
 }
