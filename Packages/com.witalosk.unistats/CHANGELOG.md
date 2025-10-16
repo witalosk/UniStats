@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## [1.4.1] - 2025-10-16
+### Bug Fixes
+- Fixed an issue where SystemInfoProvider did not function in versions prior to 2022.1.
+
 ## [1.4.0] - 2025-07-11
 ### Changes
 - Added Text Module (System Info Module).
