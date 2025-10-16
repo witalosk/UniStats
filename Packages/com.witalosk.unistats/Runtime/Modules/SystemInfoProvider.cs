@@ -17,35 +17,43 @@ namespace UniStats
             _currentScreenWindowResolution.x = Screen.width;
             _currentScreenWindowResolution.y = Screen.height;
             var res = Screen.currentResolution;
-            
+
             // ScreenResolution
             _textBuilder.AppendLine("Screen: "
                                     + res.width
                                     + "x"
                                     + res.height
                                     + "@"
+#if UNITY_2022_2_OR_NEWER
                                     +  Mathf.RoundToInt((float)res.refreshRateRatio.value)
+#else
+                                    +  res.refreshRate
+#endif
                                     + "Hz");
-            
+
             // ScreenWindowResolution
             _textBuilder.AppendLine("Window: "
                                     + _currentScreenWindowResolution.x
                                     + "x"
                                     + _currentScreenWindowResolution.y
                                     + "@"
-                                    + Mathf.RoundToInt((float)res.refreshRateRatio.value)
+#if UNITY_2022_2_OR_NEWER
+                                    +  Mathf.RoundToInt((float)res.refreshRateRatio.value)
+#else
+                                    +  res.refreshRate
+#endif
                                     + "Hz["
                                     + (int)Screen.dpi
                                     + "dpi]");
-            
+
             // GraphicsDeviceVersion
             _textBuilder.AppendLine("Graphics API: "
                                     + SystemInfo.graphicsDeviceVersion);
-            
+
             // GraphicsDeviceName
             _textBuilder.AppendLine("GPU: "
                                     + SystemInfo.graphicsDeviceName);
-            
+
             // GraphicsMemorySize
             _textBuilder.AppendLine("VRAM: "
                                     + SystemInfo.graphicsMemorySize
@@ -53,29 +61,29 @@ namespace UniStats
                                     + SystemInfo.maxTextureSize
                                     + "px. Shader level: "
                                     + SystemInfo.graphicsShaderLevel);
-            
+
             // ProcessorType
             _textBuilder.AppendLine("CPU: "
                                     + SystemInfo.processorType
                                     + " ["
                                     + SystemInfo.processorCount
                                     + " cores]");
-            
+
             // SystemMemorySize
             _textBuilder.AppendLine("RAM: "
                                     + SystemInfo.systemMemorySize
                                     + " MB");
-            
+
             // OperationSystem
             _textBuilder.Append("OS: "
                                     + SystemInfo.operatingSystem
                                     + " ["
                                     + SystemInfo.deviceType
                                     + "]");
-            
+
             _text = _textBuilder.ToString();
         }
-        
+
         public void Init()
         {
             BuildText();
